@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spinningCube:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/spinningCube_jar</output-path>
+    <root id="archive" name="spinningCube.jar">
+      <element id="module-output" name="spinningCube" />
+    </root>
+  </artifact>
+</component>
