@@ -67,11 +67,12 @@ public class Main {
             Arrays.fill(zBuffer, 0);
             for (double cubeX = -cubeWidth; cubeX < cubeWidth; cubeX += speed) {
                 for (double cubeY = -cubeWidth; cubeY < cubeWidth; cubeY += speed) {
-                    calculateCords(cubeX, cubeY, -cubeWidth, '.');
+                    calculateCords(cubeX, cubeY, -cubeWidth, '#');
+                    calculateCords(-cubeX, cubeY, cubeWidth, '.');
                     calculateCords(cubeWidth, cubeY, cubeX, '$');
                     calculateCords(-cubeWidth, cubeY, -cubeX, '~');
-                    calculateCords(-cubeX, cubeY, cubeWidth, '#');
-                    calculateCords(cubeX, cubeWidth, cubeY, '-');
+                    calculateCords(-cubeX, (double) cubeWidth, cubeY, '-');
+                    calculateCords(cubeX, -cubeWidth, cubeY, '!');
                 }
             }
 
